@@ -7,6 +7,7 @@ Delete method will be recursively called starting with the root page until the k
 Data Rearrangement:
 Occupancy Criteria 50%
 When a key gets deleted from a leaf page occupancy of the page is checked for underflow. If the page goes underflow the data has to be either redistribute or merged.
+
 1. Redistribute:
 By finding the sibling and the parent of the underflow page we can use the existing Btree API to redistribute the data and to update the index as well. 
 2. Merge:
