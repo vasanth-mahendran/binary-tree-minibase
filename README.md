@@ -1,7 +1,9 @@
 # binary-tree-minibase
 IMPLEMENTATION DETAILS:
+
 Delete:
 Delete method will be recursively called starting with the root page until the key is found in the leaf page. Once the leaf page data is redistributed or merged, recursion will unfold, by redistributing the immediate parent page until it reaches root page or currents page satisfies the page occupancy criteria.
+
 Data Rearrangement:
 Occupancy Criteria 50%
 When a key gets deleted from a leaf page occupancy of the page is checked for underflow. If the page goes underflow the data has to be either redistribute or merged.
